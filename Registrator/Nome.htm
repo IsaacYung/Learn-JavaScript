@@ -1,0 +1,187 @@
+<html>
+
+
+<head><title>Registrator - v 2.2</title>
+
+<link rel=StyleSheet href="stilo.css" type="text/css">
+
+<script type="text/javascript" language="javascript" src="jquery.js"></script>
+
+<script type="text/javascript" language="javascript" src="funcoes.js"></script>
+
+<script type="text/javascript" language="javascript" src="funcoes-filho.js"></script>
+
+<script type="text/javascript" language="javascript" src="salvador.js"></script>
+
+<script type="text/javascript" language="javascript" src="funcoes-siai.js"></script>
+
+<script type="text/javascript" language="javascript" src="comandos.js"></script>
+
+<script type="text/javascript" language="javascript" src="funcoes-cmd.js"></script>
+
+<script type="text/javascript" src="jquery.wslide.js"></script>
+
+<script language="javascript">
+
+
+
+$(document).ready(function(){//on attend que la page soit chargée
+        //on donne l'id de la liste visée, et on lui donne ses paramètres
+
+        $("#tab").wslide({
+                width: 225,
+                height: 62,
+                horiz: false,
+		duration:500,
+		autolink: false
+        });
+
+	
+        //si vous avez d'autre listes, placez leur code d'initialisation ici à la suite ....
+        //$("#autre_liste").wslide({ ...
+});
+</script>
+
+<link rel="shortcut icon" src="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" src="favicon.png" type="image/PNG" />
+
+
+
+</head>
+<body onKeyPress="tecla_pressionada()">
+
+
+
+<form name="preCadastro">
+
+	<div id="cadastro">
+		
+		
+
+		<script language="javascript">
+
+			voltar();
+
+		</script>
+		<br><center><span id="recomendo">É recomendado utilizar o Zoom a 115%<span>	</center>
+	</div>
+	
+</form>
+
+<div id="principal">
+<form name="cltCadastro">
+	<div id="cabecalho">
+	<b>AJUSTAR O ZOO CONFORME A SUA PREFERÊNCIA<b>
+			
+
+	</div>
+</form>
+
+<font style='text-transform: capitalize'>
+
+  
+
+	<div id="cltAtual">
+	
+			
+
+	</div>
+</font>
+<font style='text-transform: capitalize'>
+
+<form name="frmObs">
+	<center>
+	<div id="obs">
+	
+			
+
+	</div>
+	</center>
+</form>
+</font>
+
+	<div id="cltPassado">
+	
+			
+
+	</div> 
+
+	</div>
+
+
+	
+	<div id="rodape">
+		<div id="links">
+		<ul id="tab">
+
+		<li><a href="\\192.168.4.252\Operação\Agentes\Diego Coelho\atalhos.html" target="_BLANK">Atalhos</a> <br> <a href="\\192.168.4.252\Operação\Agentes\Diego Coelho\fabricantes\teste.html"  target="_BLANK">SAC Fabricantes</a>  <br> <a href="\\192.168.4.252\Operação\CDF AI\index.html" target="_BLANK">Guia AI</a> <br><a href="http://cdfdb01/" target="_BLANK">VORAN</a> </li>
+
+
+
+		<li><b id="ps">BrTurbo:</b> 0800 644 4000 <br> <b id="ps">Central de Rel.:</b> 0800 642 0888 <br> <b id="ps">Oi 3G:</b> 1057</li> 
+
+			
+		
+		<li> <a href="javascript:relatorio();" >> Relatório </a><br>  <a href="https://crm.ig.com.br/wambp/" target="_BLANK">CRM OI Novo</a><br> <a href="http://192.168.1.252/intranet/index.php/treinamentos/roteadores/" target="_BLANK">Roteadores</a> <br> <a href="http://www.chasms.com/xpsp2/start.htm" target="_BLANK">Simulador XP</a></li>
+			
+			
+			<li>	
+				
+				<form name="frmUf">
+				UF/DDD: <input style="width:20px;height:18px;" type="text" width="3" onkeyup="ufval();" name="uf"></input><a href="#"><div id="diagUf">Qual o estado?</div>	</a>	
+				</form>
+			</li>
+			
+
+				<li>
+				<b id="ps">Tecnico Especializado Positivo</b> SP/Outras<br>
+				<b id="ps">Nosso Suporte:</b> 3004-2804 / 0800 721 2804<br>
+				<b id="ps">Ass. Técnica:</b>  4002-6440 / 0800 644 7500<br>
+				<b id="ps">Vendas & Rel.:</b> 3004-7673 / 0800 721 7673		
+				</li>
+
+				<li>
+				<form name="frmPesquisa">
+				<img src='http://icongal.com/gallery/image/134300/magnifying_glass_zoom_find_search.png' width='17'> <input type="text" name="termo" style="width:140; height:18;"  onkeyup="pesquisa()"></input> <br>
+				<div id="pesquisa">Pesquisar Comando</div></form>
+				</li>
+
+				<li>
+				Programador:<br> Isaac Yung Lopes <br><br>Links externos: <br>Diego Coelho e
+                                Fabio Ferreira
+				</li>
+				
+		</ul>
+		</div>
+		<div id="menulinks">
+		<center>
+
+		<a id="mn" href="#tab-1">Links</a>
+		<a id="mn" href="#tab-2">Telefones</a>
+		<a id="mn" href="#tab-3">Ferramentas</a>
+		<a id="mn" href="#tab-4">Oi Velox</a><br>
+		<a id="mn" href="#tab-5">Positivo</a>
+		<a id="mn" href="#tab-6">Comandos</a>
+		</center>
+		</div>
+		<div id="mais">
+		<table width="100%">
+			<tr>
+				<td>
+				<a href="ajuda.pdf" target="_blank">Como Funciona</a>
+				</td>
+
+				<td align="right">
+				<a href="#tab-7">Creditos</a>
+				
+				</td> 
+			</tr> 
+		</table>
+		</div>
+		
+	</div>
+
+
+</body>
+</html>
+
